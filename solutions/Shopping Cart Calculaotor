@@ -1,0 +1,11 @@
+def calculate_cart_total():
+    total = 0
+    while True:
+        price = input("Enter price (or 'done' to finish): ")
+        if price.lower() == 'done':
+            break
+        try:
+            total += float(price)
+        except ValueError:
+            print("Invalid price, please try again")
+    return round(total, 2)

@@ -1,0 +1,10 @@
+
+def convert_number():
+    num = input("Enter a decimal number: ")
+    try:
+        decimal = int(num)
+        print(f"Binary: {bin(decimal)}")
+        print(f"Hexadecimal: {hex(decimal)}")
+        print(f"Octal: {oct(decimal)}")
+    except ValueError:
+        print("Please enter a valid decimal number")
